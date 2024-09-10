@@ -1,24 +1,16 @@
-# Definición de la clase Producto
-class Producto:
-    def __init__(self, nombre, precio, cantidad):
-        self.nombre = nombre
-        self.precio = precio
-        self.cantidad = cantidad
+# This is a sample Python script.
 
-    def mostrar_detalles(self):
-        print(f"Producto: {self.nombre}, Precio: {self.precio}, Cantidad: {self.cantidad}")
+# Press Mayús+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-# Definición de la clase Inventario
-class Inventario:
-    def __init__(self):
-        self.productos = []
 
-    def agregar_producto(self, producto):
-        self.productos.append(producto)
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-    def eliminar_producto(self, producto_nombre):
-        self.productos = [p for p in self.productos if p.nombre != producto_nombre]
 
-    def mostrar_inventario(self):
-        for producto in self.productos:
-            producto.mostrar_detalles()
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
